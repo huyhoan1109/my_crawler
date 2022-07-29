@@ -217,7 +217,7 @@ class Bridge():
         referer_header = '{uri.scheme}://{uri.netloc}/'.format(uri=domain)
         HEADERS['Referer'] = referer_header
 
-        if not any(substr in current_manga_url for substr in ['nhattruyen', 'nettruyen']):
+        if not any(substr in current_manga_url for substr in ['nettruyenme']):
             print('Invalid manga url. Please try again.')
             return result
         else:
